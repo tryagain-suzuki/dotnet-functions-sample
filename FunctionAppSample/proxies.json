@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json.schemastore.org/proxies",
+  "proxies": {
+    "books-get": {
+      "matchCondition": {
+        "route": "/api/books",
+        "methods": [ "GET" ]
+      },
+      "backendUri": "https://tryagain-fnction-sample-02.azurewebsites.net/api/GetBooks"
+    },
+    "books-post": {
+      "matchCondition": {
+        "route": "/api/books",
+        "methods": [ "POST" ]
+      },
+      "backendUri": "https://tryagain-fnction-sample-02.azurewebsites.net/api/PostBook"
+    }
+  }
+}
